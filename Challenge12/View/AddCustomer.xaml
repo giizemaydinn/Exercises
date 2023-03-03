@@ -1,0 +1,64 @@
+﻿<Window x:Class="Challenge12.View.AddCustomer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Challenge12.View"
+        mc:Ignorable="d"
+        Title="AddCustomer" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="Company Name : " Width="100"/>
+                <TextBox Name="txtCompanyName" Width="200"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="Contact Name : " Width="100"/>
+                <TextBox Name="txtContactName" Width="200"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="Contact Title : " Width="100"/>
+                <TextBox Name="txtContactTitle" Width="200"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="Address : " Width="100"/>
+                <TextBox Name="txtAddress" Width="200"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="City : " Width="100"/>
+                <TextBox Name="txtCity" Width="200"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="Region : " Width="100"/>
+                <TextBox Name="txtRegion" Width="200"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="Postal Code : " Width="100"/>
+                <TextBox Name="txtPostalCode" Width="200"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="Country : " Width="100"/>
+                <TextBox Name="txtCountry" Width="200"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="Phone : " Width="100"/>
+                <TextBox Name="txtPhone" Width="200"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="Fax : " Width="100"/>
+                <TextBox Name="txtFax" Width="200"/>
+            </StackPanel>
+            <Button x:Name="btnAddCustomer" Content="Add Customer"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
