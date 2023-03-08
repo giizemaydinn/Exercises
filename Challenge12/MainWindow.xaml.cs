@@ -19,16 +19,19 @@ namespace Challenge12
 {
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        int employeeId;
+        public MainWindow(int id)
         {
             InitializeComponent();
-            
+            employeeId = id;
 
             this.btnOrder.Click += BtnOrder_Click;
             this.btnHome.Click += BtnHome_Click;
             this.btnProduct.Click += BtnProduct_Click;
             this.btnCustomer.Click += BtnCustomer_Click;
 
+            Home home = new Home(employeeId);
+            grGetContent.Children.Add(home);
         }
 
         private void BtnCustomer_Click(object sender, RoutedEventArgs e)
@@ -47,7 +50,7 @@ namespace Challenge12
             {
                 grGetContent.Children.RemoveAt(0);
             }
-            Home home = new Home(); 
+            Home home = new Home(employeeId); 
             grGetContent.Children.Add(home);
         }
 
@@ -62,6 +65,7 @@ namespace Challenge12
             {
                 grGetContent.Children.RemoveAt(0);
             }
+
             UcTable ucTable = new UcTable(page);
             grGetContent.Children.Add(ucTable);
         }

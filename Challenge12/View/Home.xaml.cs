@@ -26,24 +26,14 @@ namespace Challenge12.View
     public partial class Home : UserControl
     {
         EmployeeDal employeeDal = new EmployeeDal();
-        public Home()
+        public Home(int id)
         {
+            
+
             InitializeComponent();
+            Employee emp = employeeDal.Get(x => x.EmployeeID == id);
+            this.txtName.Text = emp.FirstName + " " + emp.LastName;
 
-            //BitmapImage imageSource = new BitmapImage();
-            //using (var mem = new MemoryStream(employeeDal.Get(x => x.EmployeeID == 1).Photo))
-            //{
-            //    //mem.Position = 0;
-            //    imageSource.BeginInit();
-            //    //imageSource.CreateOptions = BitmapCreateOptions.PreservePixelFormat;
-            //    //imageSource.CacheOption = BitmapCacheOption.OnLoad;
-            //    //imageSource.UriSource = null;
-            //    imageSource.StreamSource = mem;
-            //    imageSource.CacheOption= BitmapCacheOption.OnLoad;
-            //    imageSource.EndInit();
-            //}
-
-            //img.Source = imageSource;
 
         }
 

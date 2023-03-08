@@ -7,10 +7,22 @@
              mc:Ignorable="d"
              d:DesignHeight="600"
              d:DesignWidth="622">
-    <Grid x:Name="grGetContent">
-        <Image Name="img"></Image>
-        
-    </Grid>
+    <Border>
+
+        <Grid  Width="380">
+
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                <Image Name="imgUser" Height="64" Width="64" Margin="0,20,0,0" />
+                <Label Content="Account" Margin="0,4,0,12" HorizontalAlignment="Center" Foreground="#444444" FontFamily="Segoe UI Semilight" FontSize="26"></Label>
+                <Grid Margin="0,0,0,8">
+                    <TextBlock Name="txtName" Background="Transparent"  HorizontalAlignment="Center" Height="36" Width="220" >
+                    </TextBlock>
+                </Grid>
+
+                </StackPanel>
+        </Grid>
+
+    </Border>
 
 
 
